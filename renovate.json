@@ -1,21 +1,21 @@
 {
-  "extends": [
-    "config:js-app",
-    ":disableDependencyDashboard"
-  ],
+  "extends": ["schedule:nonOfficeHours"],
 
   "automergeType": "branch",
   "ignoreTests": true,
+
   "packageRules": [
     {
       "matchDepTypes": ["devDependencies"],
       "matchPackagePatterns": ["webpack"],
-      "automerge": true
+      "automerge": true,
+      "schedule": ["* * * * 2"]
     },
     {
       "matchDepTypes": ["devDependencies"],
       "matchPackageNames": ["/cypress/"],
-      "automerge": true
+      "automerge": true,
+      "schedule": ["* * * * 2"]
     },
     {
       "matchUpdateTypes": ["major"],
