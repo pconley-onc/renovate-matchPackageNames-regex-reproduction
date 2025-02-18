@@ -1,1 +1,14 @@
-{}
+{
+  "packageRules": [
+    {
+      "matchDepTypes": ["devDependencies"],
+      "matchPackagePatterns": ["webpack"],
+      "enabled": false
+    },
+    {
+      "matchDepTypes": ["devDependencies"],
+      "matchPackageNames": ["/cypress/"],
+      "enabled": false
+    }
+  ]
+}
