@@ -1,6 +1,6 @@
 {
   "devDependencies": {
     "cypress": "13.17.0",
-    "webpack": "4.47.0"
+    "webpack": "5.98.0"
   }
 }
