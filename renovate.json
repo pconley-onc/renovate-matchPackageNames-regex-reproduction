@@ -1,14 +1,25 @@
 {
+  "extends": [
+    "config:js-app",
+    ":disableDependencyDashboard"
+  ],
+
+  "automergeType": "branch",
+  "ignoreTests": true,
   "packageRules": [
     {
       "matchDepTypes": ["devDependencies"],
       "matchPackagePatterns": ["webpack"],
-      "enabled": false
+      "automerge": true
     },
     {
       "matchDepTypes": ["devDependencies"],
       "matchPackageNames": ["/cypress/"],
-      "enabled": false
+      "automerge": true
+    },
+    {
+      "matchUpdateTypes": ["major"],
+      "automerge": false
     }
   ]
 }
