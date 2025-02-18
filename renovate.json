@@ -1,1 +1,14 @@
-{}
+{
+  "packageRules": [
+    {
+      "description": "matchPackagePatterns: works as expected",
+      "matchPackagePatterns": ["pret"],
+      "enabled": false
+    },
+    {
+      "description": "matchPackageNames: doesn't work",
+      "matchPackageNames": ["/.*lint.*/"],
+      "enabled": false
+    }
+  ]
+}
